@@ -1,0 +1,28 @@
+Dataset Introductions
+
+MQ2008 is a query set from Million Query track of TREC 2008. There are about 800 queries in it with labeled documents. In MQ2008, the 5-fold cross
+validation strategy is adopted and the 5-fold partitions are included in the package. In each fold, there are three subsets for learning: training set,
+validation set and testing set. 
+=====================================
+   Folds     Training set   Validation set   Test
+set
+   Fold1     {S1,S2,S3}
+   S4                 S5
+
+   Fold2     {S2,S3,S4}
+   S5                 S1
+
+   Fold3     {S3,S4,S5}
+   S1                 S2
+
+   Fold4     {S4,S5,S1}
+   S2                 S3
+
+   Fold5     {S5,S1,S2}
+   S3                 S4
+
+=====================================
+Dataset Descriptions
+Each row is a query-document pair. The first column is relevance label of this pair, the second column is query id, the following columns are features, and
+the end of the row is comment about the pair, including id of the document. The larger the relevance label, the more relevant the query-document pair. A
+query-document pair is represented by a 46-dimensional feature vector.
